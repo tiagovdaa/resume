@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CV DOWNLOAD - TIAGO ALMEIDA BBS</title>
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <style>@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');</style>
+</head>
+<body>
+  <div class="terminal-window">
+    <div id="header"></div>
+    <div class="terminal-content" id="cv-terminal">
+      <p data-i18n="resume_intro"></p>
+      <button id="start-download" class="bbs-button" data-i18n="start_download"></button>      
+    </div>
+  </div>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {{
+        document.getElementById('header').innerHTML = data;
+        const lang = localStorage.getItem('lang') || 'en';
+        setLanguage(lang);
+      }});
+  </script>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/cv-modem.js"></script>
+</body>
+</html>

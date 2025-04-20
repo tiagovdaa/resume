@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: black;
+  color: #dcd0ff;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  padding: 2rem;
+  margin: 0;
+}
+
+.terminal-window {
+  border: 1px solid #a020f0;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px #a020f088;
+  background-color: #000000dd;
+  width: 100%;
+  max-width: 900px;
+}
+
+.lang-switch,
+.menu {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.lang-switch a,
+.menu a {
+  color: #cccccc;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+
+.lang-switch a:hover,
+.menu a:hover {
+  color: #ff79c6;
+}
+
+.ascii-link {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.ascii {
+  color: #a020f0;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  white-space: pre;
+  font-size: 14px;
+}
+
+.ascii-link:hover .ascii {
+  color: #ff79c6;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #a020f0;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.terminal-content {
+  width: 100%;
+  color: #dcd0ff;
+}
+
+.bbs-button {
+  background-color: #a020f0;
+  color: #000;
+  font-family: 'VT323', monospace;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #ff79c6;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.bbs-button:hover {
+  background-color: #ff79c6;
+  color: black;
+  border-color: #a020f0;
+}
