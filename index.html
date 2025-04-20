@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>WELCOME - TIAGO ALMEIDA BBS</title>
+  <title>TIAGO ALMEIDA - BBS</title>
   <link rel="stylesheet" href="css/core.css">
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/effects.css">
@@ -13,19 +14,46 @@
     <div id="header"></div>
 
     <div class="terminal-content">
-      <p>WELCOME content goes here...</p>
+      <h1 data-i18n="about_title"></h1>
+      <h2 data-i18n="early_days_title"></h2>
+      <p data-i18n="early_days_1"></p>
+      <p data-i18n="early_days_2"></p>
+      <p data-i18n="early_days_3"></p>
+
+      <h2 data-i18n="career_title"></h2>
+      <h3 data-i18n="linux_path_title"></h3>
+      <p data-i18n="linux_path_1"></p>
+      <p data-i18n="linux_path_2"></p>
+      <p data-i18n="linux_path_3"></p>
+
+      <h3 data-i18n="unix_exp_title"></h3>
+      <p data-i18n="unix_exp_1"></p>
+      <p data-i18n="unix_exp_2"></p>
+
+      <h3 data-i18n="devops_title"></h3>
+      <p data-i18n="devops_1"></p>
+      <p data-i18n="devops_2"></p>
+      <p data-i18n="devops_3"></p>
+
+      <h2 data-i18n="roles_title"></h2>
+      <h3 data-i18n="role_sysadmin_title"></h3>
+      <p data-i18n="role_sysadmin_text"></p>
+      <h3 data-i18n="role_sre_title"></h3>
+      <p data-i18n="role_sre_text"></p>
+      <h3 data-i18n="role_devops_title"></h3>
+      <p data-i18n="role_devops_text"></p>
+
     </div>
   </div>
 
   <script>
-fetch('header.html')
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById('header').innerHTML = data;
-    const lang = localStorage.getItem('lang') || 'en';
-    setLanguage(lang);
-  });
-
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {{
+        document.getElementById('header').innerHTML = data;
+        const lang = localStorage.getItem('lang') || 'en';
+        setLanguage(lang);
+      }});
   </script>
   <script src="js/i18n.js"></script>
 </body>

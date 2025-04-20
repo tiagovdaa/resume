@@ -63,9 +63,10 @@ body {
   width: 100%;
 }
 
-.terminal-content {
-  width: 100%;
-  color: #dcd0ff;
+.terminal-content p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
 }
 
 .bbs-button {

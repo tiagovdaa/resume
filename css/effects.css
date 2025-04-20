@@ -3,11 +3,7 @@
   50% { opacity: 0; }
 }
 
-.blinking-cursor {
-  animation: blink 1s step-start infinite;
-}
-
 .ansi-blink {
   animation: blink 1s step-start infinite;
-  color: #39ff14; /* verde ANSI clássico */
+  color: #39ff14;
 }
